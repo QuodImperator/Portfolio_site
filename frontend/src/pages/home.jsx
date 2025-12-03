@@ -8,7 +8,7 @@ import ProjectCarousel from "../components/projectCarousel.jsx";
 function Home() {
   return (
     <main className="Description font-iosevka flex flex-col justify-start items-center min-h-screen text-center py-8 px-4 space-y-4 text-white bg-custom-gradient">
-      
+
       <h1 className="Alias text-3xl font-bold">Ave Imperator</h1>
 
       {/* Basic Info */}
@@ -75,7 +75,7 @@ function Home() {
           I like tech (sometimes) and building quality, performant software (hopefully).
           My experience lies in building full-stack applications (JS, React, HTML+CSS, Java, Spring Boot, GraphQL, SQL etc.), small games (C# and Unity), and my desire lies in employment.
         </p>
-        <br className="hidden md:block"/> 
+        <br className="hidden md:block" />
         <p className="mt-2 md:mt-0">
           Other less relevant information: I like reading (history, philosophy, classics), bodybuilding, grand strategy video games and self-inflicted nutritional experimentation.
         </p>
@@ -83,6 +83,7 @@ function Home() {
 
       {/* Projects */}
       <div className="Projects w-full max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-4 text-white">Featured Projects</h2>
         <ProjectCarousel />
       </div>
     </main>

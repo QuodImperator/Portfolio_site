@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   return (
@@ -49,6 +50,17 @@ function Home() {
         >
           <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
           <span>linkedin.com/in/darko-stefanoski-48b56a214</span>
+        </a>
+
+        {/* GitHub */}
+        <a
+          href="https://github.com/QuodImperator"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+        >
+          <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
+          <span>github.com/QuodImperator</span>
         </a>
       </div>
 

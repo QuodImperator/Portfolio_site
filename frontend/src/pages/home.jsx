@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import resume from "../assets/Darko-Stefanoski-CV-UNFINISHED.pdf";
 
 function Home() {
   return (
@@ -61,6 +63,17 @@ function Home() {
         >
           <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
           <span>github.com/QuodImperator</span>
+        </a>
+
+        {/* Resume */}
+        <a
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+        >
+          <FontAwesomeIcon icon={faFilePdf} className="w-5 h-5" />
+          <span>Resume</span>
         </a>
       </div>
 

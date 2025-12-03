@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("./assets/fonts/iosevka-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Iosevka";
+  src: url("./assets/fonts/iosevka-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Iosevka";
+  src: url("./assets/fonts/iosevka-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-iosevka {
+  font-family: "Iosevka", monospace;
+}
+
+.bg-custom-gradient {
+  background: radial-gradient(circle at top, #1a237e, #000000);
+}

@@ -1,8 +1,6 @@
-import { BrowserRouter } from 'react-router-dom'
-import { Routes } from 'react-router-dom'
-import { Route } from 'react-router-dom'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home.jsx'
+import './index.css'
 
 function App() {
   return (

@@ -1,0 +1,393 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+eslint.config.js
+index.html
+package.json
+README.md
+src/App.jsx
+src/assets/fonts/iosevka-woff2/iosevka-bold.woff2
+src/assets/fonts/iosevka-woff2/iosevka-bolditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-boldoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extended.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedbold.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedbolditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedboldoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedextrabold.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedextrabolditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedextraboldoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedextralight.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedextralightitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedextralightoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedheavy.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedheavyitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedheavyoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendeditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedlight.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedlightitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedlightoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedmedium.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedmediumitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedmediumoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedsemibold.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedsemibolditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedsemiboldoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedthin.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedthinitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extendedthinoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extrabold.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extrabolditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extraboldoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extralight.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extralightitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-extralightoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-heavy.woff2
+src/assets/fonts/iosevka-woff2/iosevka-heavyitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-heavyoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-italic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-light.woff2
+src/assets/fonts/iosevka-woff2/iosevka-lightitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-lightoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-medium.woff2
+src/assets/fonts/iosevka-woff2/iosevka-mediumitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-mediumoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-oblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-regular.woff2
+src/assets/fonts/iosevka-woff2/iosevka-semibold.woff2
+src/assets/fonts/iosevka-woff2/iosevka-semibolditalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-semiboldoblique.woff2
+src/assets/fonts/iosevka-woff2/iosevka-thin.woff2
+src/assets/fonts/iosevka-woff2/iosevka-thinitalic.woff2
+src/assets/fonts/iosevka-woff2/iosevka-thinoblique.woff2
+src/index.css
+src/main.jsx
+src/pages/home.jsx
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: { jsx: true },
+        sourceType: 'module',
+      },
+    },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+    },
+  },
+])
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "@tailwindcss/vite": "^4.1.17",
+    "axios": "^1.13.2",
+    "lucide-react": "^0.555.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
+    "vite": "^7.2.4"
+  }
+}
+</file>
+
+<file path="README.md">
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</file>
+
+<file path="src/App.jsx">
+import { BrowserRouter } from 'react-router-dom'
+import { Routes } from 'react-router-dom'
+import { Route } from 'react-router-dom'
+import Home from './pages/home.jsx'
+import './index.css'
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
+</file>
+
+<file path="src/index.css">
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Iosevka";
+  src: url("./assets/fonts/iosevka-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Iosevka";
+  src: url("./assets/fonts/iosevka-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Iosevka";
+  src: url("./assets/fonts/iosevka-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-iosevka {
+  font-family: "Iosevka", monospace;
+}
+</file>
+
+<file path="src/main.jsx">
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+</file>
+
+<file path="src/pages/home.jsx">
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+function Home() {
+  return (
+    <main
+      className="Description font-iosevka flex flex-col justify-start items-center h-screen text-center pt-20 px-6 space-y-6 text-white"
+      style={{
+        background: "radial-gradient(circle at top, #1a237e, #000000)",
+      }}
+    >
+      <h1 className="Alias text-4xl font-bold">Ave Imperator</h1>
+
+      {/* BASIC INFO */}
+      <div className="Info text-lg leading-relaxed">
+        <p>Darko Stefanoski</p>
+        <p>Skopje, Macedonia</p>
+        <p>Software Wrangler</p>
+        <br />
+        <p>
+          CS Student @{" "}
+          <a
+            href="https://www.finki.ukim.mk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 transition duration-300"
+          >
+            UKIM-FCSE
+          </a>
+        </p>
+      </div>
+
+      {/* CONTACT SECTION */}
+      <div className="Contact flex flex-col space-y-3">
+        {/* Email */}
+        <a
+          href="mailto:darkostefanoski951@gmail.com"
+          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+        >
+          <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
+          <span>darkostefanoski951@gmail.com</span>
+        </a>
+
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/darko-stefanoski-48b56a214/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
+          <span>linkedin.com/in/darko-stefanoski-48b56a214</span>
+        </a>
+      </div>
+
+      {/* ABOUT ME */}
+      <div className="AboutMe max-w-2xl text-center text-lg leading-relaxed">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p>
+          I like tech (sometimes) and building quality, performant software (hopefully).
+          My experience lies in building full-stack applications (JS, React, HTML+CSS, Java, Spring Boot, GraphQL, SQL etc.), small games (C# and Unity), and my desire lies in employment.
+          <br />
+          <br />
+          Other less relevant information about me is that I like reading (mostly history, philosophy, classics and occasional modern fiction), bodybuilding, grand strategy video games and self inflicted nutritional experimentation inspired by Ray Peat.
+        </p>
+      </div>
+    </main>
+  );
+}
+
+export default Home;
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+</file>
+
+</files>

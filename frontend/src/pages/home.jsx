@@ -1,25 +1,20 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import resume from "../assets/Darko-Stefanoski-CV-UNFINISHED.pdf";
+import ProjectCarousel from "../components/projectCarousel.jsx";
 
 function Home() {
   return (
-    <main
-      className="Description font-iosevka flex flex-col justify-start items-center h-screen text-center pt-20 px-6 space-y-6 text-white bg-custom-gradient"
-    >
-      <h1 className="Alias text-4xl font-bold">Ave Imperator</h1>
+    <main className="Description font-iosevka flex flex-col justify-start items-center min-h-screen text-center py-8 px-4 space-y-4 text-white bg-custom-gradient">
+      
+      <h1 className="Alias text-3xl font-bold">Ave Imperator</h1>
 
-      {/* BASIC INFO */}
-      <div className="Info text-lg leading-relaxed">
-        <p>Darko Stefanoski</p>
-        <p>Skopje, Macedonia</p>
-        <p>Software Wrangler</p>
-        <br />
-        <p>
+      {/* Basic Info */}
+      <div className="Info text-base leading-relaxed">
+        <p>Darko Stefanoski • Skopje, Macedonia • Software Developer</p>
+        <p className="mt-1">
           CS Student @{" "}
           <a
             href="https://www.finki.ukim.mk/"
@@ -32,61 +27,63 @@ function Home() {
         </p>
       </div>
 
-      {/* CONTACT SECTION */}
-      <div className="Contact flex flex-col space-y-3 text-lg">
-        {/* Email */}
+      {/* Contact Links */}
+      <div className="Contact flex flex-wrap justify-center gap-6 text-base">
         <a
           href="mailto:darkostefanoski951@gmail.com"
-          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+          className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition duration-300"
         >
-          <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
+          <FontAwesomeIcon icon={faEnvelope} className="w-4 h-4" />
           <span>darkostefanoski951@gmail.com</span>
         </a>
 
-        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/darko-stefanoski-48b56a214/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+          className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition duration-300"
         >
-          <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
-          <span>linkedin.com/in/darko-stefanoski-48b56a214</span>
+          <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />
+          <span>LinkedIn</span>
         </a>
 
-        {/* GitHub */}
         <a
           href="https://github.com/QuodImperator"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+          className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition duration-300"
         >
-          <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
-          <span>github.com/QuodImperator</span>
+          <FontAwesomeIcon icon={faGithub} className="w-4 h-4" />
+          <span>GitHub</span>
         </a>
 
-        {/* Resume */}
         <a
           href={resume}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center space-x-3 text-blue-400 hover:text-blue-300 transition duration-300"
+          className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition duration-300"
         >
-          <FontAwesomeIcon icon={faFilePdf} className="w-5 h-5" />
+          <FontAwesomeIcon icon={faFilePdf} className="w-4 h-4" />
           <span>Resume</span>
         </a>
       </div>
 
-      {/* ABOUT ME */}
-      <div className="AboutMe max-w-2xl text-center text-medium leading-relaxed">
-        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+      {/* About Me */}
+      <div className="AboutMe max-w-2xl text-center text-sm leading-relaxed px-2">
+        <h2 className="text-lg font-semibold mb-2">About Me</h2>
         <p>
           I like tech (sometimes) and building quality, performant software (hopefully).
           My experience lies in building full-stack applications (JS, React, HTML+CSS, Java, Spring Boot, GraphQL, SQL etc.), small games (C# and Unity), and my desire lies in employment.
-          <br />
-          <br />
-          Other less relevant information about me is that I like reading (mostly history, philosophy, classics and occasional modern fiction), bodybuilding, grand strategy video games and self inflicted nutritional experimentation inspired by Ray Peat.
         </p>
+        <br className="hidden md:block"/> 
+        <p className="mt-2 md:mt-0">
+          Other less relevant information: I like reading (history, philosophy, classics), bodybuilding, grand strategy video games and self-inflicted nutritional experimentation.
+        </p>
+      </div>
+
+      {/* Projects */}
+      <div className="Projects w-full max-w-2xl">
+        <ProjectCarousel />
       </div>
     </main>
   );
